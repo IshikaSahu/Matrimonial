@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+.info{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 32px;
+}
+.header-left{
+    width:60%;
+    display: flex;
+    align-items: center;
+}
+.header-left .email span,.header-left .phone span,.contact-phone span,.contact-email span, .contact-address span{
+    margin: 5px;
+}
+
+.header-right{
+    width:40%;
+    text-align: right;
+}
+.fa-11{
+    margin: 0 10px;
+}
+.fa-1{
+    border: 10px solid #3b5998;
+    background-color: #3b5998;
+    border-radius: 55%;
+    cursor: pointer;
+    color: white;
+}
+.fa-2{
+    border: 10px solid 	#1DA1F2;
+    background-color: 	#1DA1F2;
+    border-radius: 55%;
+    cursor: pointer;
+    color: white;
+}
+.fa-3{
+    border: 10px solid #db4a39;
+    background-color: #db4a39;
+    border-radius: 55%;
+    cursor: pointer;
+    color: white;
+}
+.navbar{
+    position: relative;
+}
+.navigation{   
+    padding: 0 40px; 
+    display: flex;
+    align-items: center;
+}
+.nav-left{
+    width:10%;
+}
+.logo{
+    width:65px;
+    height:65px;
+    margin:5px;
+    cursor: pointer;
+}
+.nav-right{
+    width:90%;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.list{
+    list-style-type: none;
+    margin:0 20px;
+}
+.list a{    
+    font-size: 17px;
+    color:rgb(65, 65, 65);
+}
+.list a:active{
+    color:rgb(243, 86, 112);
+}
+.list a:hover{
+    color:rgb(243, 86, 112);
+}
+.nav{
+    position: absolute;
+    left:0;
+    top: 0;
+    margin: 0 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+.hamburger{
+    position: absolute;
+    width:40px;
+    top:20px;
+    right: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.ham{
+    margin:5px;
+    border-bottom: 4px solid rgb(65, 65, 65);
+}
+.search-btn{
+    font-size:30px;
+    margin:10px 20px;
+    position: absolute;
+    top:10px;
+    right: 65px;
+    color:rgb(65, 65, 65);
+    visibility: hidden;
+    cursor: pointer;
+}
+.search-text{
+    width:100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+.search-text-resp{
+    visibility: hidden;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+video{
+    width:100%;
+}
+.home-page{
+    position:absolute;
+    top:10%;
+    display:flex;
+    align-items: center;
+    padding: 0 50px;
+    width:90%;
+}
+.title{
+    width:70%;
+    color:white;
+    text-align: center;
+}
+.title h1{
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
+.home-page img{
+    width:30%;
+    cursor: pointer;
+}
+#about{
+    position: relative;
+    background-color:rgb(253, 40, 76);
+    color:white;
+    text-align: center;
+    padding:70px;
+}
+.main{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0;
+}
+.male,.names,.female{
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.names h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin:40px 0;
+}
+.fa-heartbeat{
+    font-size: 60px;
+}
+.male img, .male p, .male media, .female img, .female p, .female media{
+    margin:30px 0;
+}
+.male img, .female img{
+    cursor: pointer;
+}
+.fa-4{
+    padding: 10px;
+    background-color: rgb(26, 25, 25);
+}
+.slideshow-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.mySlides {
+    display: none;    
+}
+
+.mySlides img{
+    cursor: pointer;
+    vertical-align: middle;
+}  
+.dots{
+    display: flex;
+    justify-content: center;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(252, 124, 145);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}  
+.active {
+    background-color: rgb(252, 199, 208);
+}
+.we-are{
+    padding:50px 0;
+}
+.description{
+    margin:40px 0;
+    display: flex;
+}
+.few-words{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(235, 233, 233);
+    padding: 50px 5px 60px 20px;
+}
+.few-words h4, .text, .few-words img, .few-words i, .best h4, .services h4{
+    margin:30px 20px;
+}
+.text-1{
+    margin:0 20px 30px;
+}
+.few-words h4, .best h4,.services h4,.contact-form-main h4{
+    font-size: 25px;
+    color:rgb(65, 65, 65);
+}
+.few-words i, .ceremony-content i{
+    color:rgb(253, 40, 76);
+    cursor: pointer;
+}
+.we{
+    display: flex; 
+    align-items: flex-start;   
+}
+.we logo{
+    width:20%;
+}
+.text, .text-1{
+    width:80%;
+    color: rgb(65, 65, 65);
+}
+.best{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;  
+    color:white;
+    background-color:rgb(139, 177, 247);  
+}
+.best h4, .btn,.contact-form-main h4{
+    color: white;
+}
+.btn{    
+    margin: 15px;
+    padding:10px 5px;
+    font-size:16px;
+    border: 2px solid white;
+    background-color: rgb(139, 177, 247);
+    cursor: pointer;
+}
+.services{
+    width:35%;
+    display: flex;
+    flex-direction: column; 
+    padding: 50px 20px 20px 20px;
+    background-color: rgb(255, 122, 144);
+}
+.management{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.management h5{
+    font-size:16px;
+    margin:10px 0;
+}
+.management i{
+    text-align: center;
+    padding: 20px;
+    margin: 30px 20px;
+    border:2px solid rgb(50, 50, 252);
+    border-radius: 50%;
+}
+.management-text{   
+    width:80%; 
+    display: flex;  
+    flex-direction: column;  
+    color: white;
+}
+.event{
+    padding:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.event1{
+    width:30%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; 
+    margin:20px;   
+}
+.event-img, .fa-6, .event-title, .event-p, .event-btn{
+    margin:15px 0;
+    color:rgb(65, 65, 65);
+}
+.event-title{
+    font-size:20px;
+}
+.event-btn{
+    font-size: 16px;
+    padding:5px 20px;
+    background-color: white;
+}
+#gallery{    
+    padding:50px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+}
+.gallery-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 20px;
+}
+.gallery-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.gallery-1 img{
+    width: 25%;
+}
+#planners{
+    padding:50px;
+}
+.planners{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 40px 10px;
+}
+.planner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 3px 0 rgb(10, 10, 10,0.4);
+}
+.planner-title{
+    font-size: 20px;
+    color:rgb(50, 50, 252);
+    margin: 20px 0 10px 0;
+}
+.planner-text{
+    color:rgb(65, 65, 65);
+    margin:10px 0 10px 0;
+}
+.planner-line{
+    margin:10px 0 0 0;
+    width: 90%;
+    border-bottom:2px solid rgb(253, 40, 76);
+}
+.ceremony{
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(rgba(253, 40, 76, 0.6), rgba(0, 0, 0, 0.7)),url('../images/wedding-ceremony.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.ceremony-content{
+    width:70%;
+}
+.ceremony-title{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;    
+}
+.ceremony-title,.ceremony-text,.ceremony-content i{
+    margin:20px 0;
+}
+#contact{
+    padding: 50px 20px;
+}
+.contact-content{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info, .contact-form{    
+    margin: 50px 30px 30px;
+    width:50%;
+}
+.contact-form{
+    background-color: rgb(253, 40, 76);
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.contact-nav{
+    display: flex;
+    align-items: center;
+}
+.contact-city{
+    list-style: none;
+}
+.contact-city,.contact-media, .contact-media span,.contact-info iframe{
+    margin: 30px 10px;
+}
+.contact-city a{
+    padding: 5px 10px;
+    margin: 30px 5px;
+    color: rgb(65, 65, 65);
+}
+.contact-city a:hover,.contact-city a:active{
+    border-bottom: 2px solid blue;
+}
+.contact-address, .contact-phone, .contact-email{
+    margin:10px;
+}
+.fa-8{
+    color: rgb(253, 40, 76);
+}
+.fa-9{
+    color: rgb(146, 146, 146);
+}
+.contact-form-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.name,.email-1,.subject,.message{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: rgb(253, 40, 76);
+    padding:10px;
+    margin:30px 0;
+}
+::placeholder,.contact-btn{
+    color: white;
+}
+.contact-btn{ 
+    border: none;   
+    border: 2px solid white;
+    background-color: rgb(253, 40, 76);
+    display: flex;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.footer{
+    padding: 15px 0;
+    background-color: black;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-img{
+    width:35%;
+}
+.footer-text{
+    width: 55%;
+    color: white;
+    font-size: 18px;
+}
+.footer-arrow{
+    width: 10%;
+}
+.footer-arrow-1{
+    color:rgb(253, 40, 76);
+    padding: 15px 4px;
+    border: 2px dotted white;
+    border-radius: 25%;
+}

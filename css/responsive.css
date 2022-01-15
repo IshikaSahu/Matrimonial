@@ -1,0 +1,65 @@
+@media only screen and (max-width:799px){
+    
+    .navigation,.nav-list,.description, .event,.details,.contact-content,.planners,.info,.header-left,.footer-content{
+        flex-direction: column;
+    }
+    .info{
+        padding: 0;
+    }
+    .navbar{
+        height:200px;
+        transition: all 0.3s ease-out;
+    }
+    .search-text{
+        visibility: visible;
+    }
+    .search-text-resp{
+        visibility: hidden;
+    }
+    .navbar-resp{
+        height:75px;
+    }
+    .navigation-resp{        
+        visibility: hidden;
+    }
+    .navigation{
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+    }    
+    .hamburger, .search-btn-resp,.nav-resp{
+        visibility: visible;
+    }
+    .header-left,.header-right{
+        text-align: center;
+        justify-content: center;
+    }
+    .header-left,.header-right,.email,.phone,.footer-img,.footer-text,.footer-arrow{
+        margin: 5px 0;
+        width: 100%;     
+        padding: 0; 
+    }
+    .male img, .female img{
+        width: 80%;
+        margin: 0 0 20px 0;
+    }
+    .few-words, .best, .services,.event1, .male,.names,.female,.contact-info,.contact-form,.nav-left,.nav-right{
+        width: 100%;     
+        padding: 0; 
+        margin: 0;  
+    }
+    .title h1{
+        font-size: 200%;
+    }
+    p{
+        font-size: 80%;
+    }
+    .gallery-1{
+        flex-wrap: wrap;
+    }
+    .gallery-1 img{
+        width: 50%;
+    }
+
+}
